@@ -1,4 +1,4 @@
-# ChallengesChallenges
+# Coding Challenges
 
 ## Postman collection
 
@@ -12,7 +12,7 @@ The postman collection is included in the repo ready to be imported and tested, 
 
 ## Project structure:
 
-This solution contains two cs projects, the App project (Challenges) and the tests project (Challenges.Tests)
+This solution contains two cs projects, the App project (Challenges.Web) and the tests project (Challenges.Tests)
 
 ## Misc Notes
 
