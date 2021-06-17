@@ -2,7 +2,7 @@
 
 ## Postman collection
 
-The postman collection is included in the repo ready to be imported and tested, is at the following location: **ChallengesChallenges/Challenges/API/PostmanCollection/**
+The postman collection is included in the repo ready to be imported and tested, is at the following location: **Challenges.Web/API/PostmanCollection/**
 
 ## API Urls to enter in the Test App:
 
