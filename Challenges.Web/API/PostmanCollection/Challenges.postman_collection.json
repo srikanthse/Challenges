@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "71d31780-0c0a-48a9-b812-5485ad9cc399",
+    "name": "Challenges",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetUser",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://sri20210523175813.azurewebsites.net/api/user",
+          "protocol": "https",
+          "host": ["sri20210523175813", "azurewebsites", "net"],
+          "path": ["api", "user"]
+        },
+        "description": "https://sri20210523175813.azurewebsites.net/api/user"
+      },
+      "response": []
+    },
+    {
+      "name": "GetSortProducts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://sri20210523175813.azurewebsites.net/api/Product/sort?sortOption=recommended",
+          "protocol": "https",
+          "host": ["sri20210523175813", "azurewebsites", "net"],
+          "path": ["api", "Product", "sort"],
+          "query": [
+            {
+              "key": "sortOption",
+              "value": "recommended"
+            }
+          ]
+        },
+        "description": "https://sri20210523175813.azurewebsites.net/api/Product/sort?sortOption=recommended"
+      },
+      "response": []
+    },
+    {
+      "name": "TrolleyTotal",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"products\": [\r\n    {\r\n      \"name\": \"Test Product\",\r\n      \"price\": 50\r\n    }\r\n  ],\r\n  \"specials\": [\r\n    {\r\n      \"quantities\": [\r\n        {\r\n          \"name\": \"Test Product\",\r\n          \"quantity\": 3\r\n        }\r\n      ],\r\n      \"total\": 2\r\n    }\r\n  ],\r\n  \"quantities\": [\r\n    {\r\n      \"name\": \"Test Product\",\r\n      \"quantity\": 3\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://sri20210523175813.azurewebsites.net/api/trolleyTotal",
+          "protocol": "https",
+          "host": ["sri20210523175813", "azurewebsites", "net"],
+          "path": ["api", "trolleyTotal"]
+        },
+        "description": "https://sri20210523175813.azurewebsites.net/api/trolleyTotal"
+      },
+      "response": []
+    },
+    {
+      "name": "CustomTrolleyTotal",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"products\": [\r\n    {\r\n      \"name\": \"Test Product\",\r\n      \"price\": 50\r\n    }\r\n  ],\r\n  \"specials\": [\r\n    {\r\n      \"quantities\": [\r\n        {\r\n          \"name\": \"Test Product\",\r\n          \"quantity\": 3\r\n        }\r\n      ],\r\n      \"total\": 2\r\n    }\r\n  ],\r\n  \"quantities\": [\r\n    {\r\n      \"name\": \"Test Product\",\r\n      \"quantity\": 3\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://sri20210523175813.azurewebsites.net/api/trolleyTotal/Custom",
+          "protocol": "https",
+          "host": ["sri20210523175813", "azurewebsites", "net"],
+          "path": ["api", "trolleyTotal", "Custom"]
+        },
+        "description": "https://sri20210523175813.azurewebsites.net/api/trolleyTotal/Custom"
+      },
+      "response": []
+    }
+  ]
+}
